@@ -1,0 +1,82 @@
+.crypto-calendar-container {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(42, 42, 42, 0.8) 100%);
+  border: 1px solid rgba(251, 191, 36, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 30px rgba(251, 191, 36, 0.1);
+  margin: 30px 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.crypto-calendar-container h2 {
+  color: #fbbf24;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
+.calendar-header h3 {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.calendar-grid-header,
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-grid-header {
+  margin-bottom: 10px;
+}
+
+.day-name {
+  color: #fbbf24;
+  font-weight: 700;
+  padding: 10px;
+  background-color: rgba(251, 191, 36, 0.1);
+  border-radius: 6px;
+}
+
+.calendar-day {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 100px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.calendar-day.empty {
+  background-color: transparent;
+  border: none;
+}
+
+.day-number {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e0e0e0;
+  margin-bottom: 5px;
+}
+
+.events-list {
+  margin-top: 5px;
+}
+
+.calendar-event {
+  background-color: rgba(251, 191, 36, 0.2);
+  color: #fbbf24;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: help;
+}
+
